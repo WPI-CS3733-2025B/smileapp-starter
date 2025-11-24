@@ -33,3 +33,21 @@ Includes all tests (unittest, pytest, selenium)
     ```
         python tests/test_selenium.py
     ```
+
+### To run the tests with "coverage" analysis
+
+   ```
+   coverage run -m pytest -v tests/test_models.py
+   coverage run -m pytest -v tests/test_routes.py
+   ```
+
+* Use coverage report to report on the results:
+    ```
+    coverage report -m
+    ```
+    
+* For a nicer presentation, use coverage html to get annotated HTML listings detailing missed lines:
+    ```
+    coverage html
+    coverage xml
+    ```
